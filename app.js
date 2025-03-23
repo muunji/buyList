@@ -22,6 +22,11 @@ app.get('/',(req,res)=>{
   res.sendFile(__dirname,'index.html')
 })
 
+//form 데이터 입력
+app.post('/add',(req,res)=>{
+  console.log(req.body)
+})
+
 app.listen(process.env.PORT, ()=>{
   console.log(`http://localhost:${process.env.PORT}`)
 })
