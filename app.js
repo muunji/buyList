@@ -21,3 +21,7 @@ app.use(express.static(path.join(__dirname,'public')))
 app.get('/',(req,res)=>{
   res.sendFile(__dirname,'index.html')
 })
+
+app.listen(process.env.PORT, ()=>{
+  console.log(`http://localhost:${process.env.PORT}`)
+})
