@@ -17,6 +17,9 @@ app.use(express.urlencoded({extended:false}))
 
 //public 폴더
 app.use(express.static(path.join(__dirname,'public')))
+//src 폴더더
+app.use(express.static(path.join(__dirname,'src')))
+
 
 app.get('/',(req,res)=>{
   res.sendFile(__dirname,'index.html')
