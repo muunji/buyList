@@ -12,6 +12,7 @@ getAllStorage()
 //입력값을 localStorage에 저장 후 저장된 내용을 브라우저에 출력
 submitBtn.addEventListener('click',()=>{
   // list = []
+  count = localStorage.length
   document.getElementsByTagName('ul')[0].innerHTML=''
   count++
 
@@ -36,7 +37,7 @@ function makeList(value){
   let li = document.createElement('li')
   li.innerHTML = `<input type='checkbox' placeholder='list'>${value.item} ${value.count}개 ${value.price}원`
   
-  ul.appendChild(li)
+  ul.prepend(li)
 }
 
 function getAllStorage(){
