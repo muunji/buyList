@@ -24,15 +24,16 @@ submitBtn.addEventListener('click',()=>{
   localStorage.setItem(`${count}`, JSON.stringify(values))
 
   //localStorage에 저장된 내용을 리스트로 만들기
-  makeList(values)
+  makeList(count)
 })
 
-function makeList(values){
+function makeList(count){
   let ul = document.getElementsByTagName('ul')[0]
-
   let li = document.createElement('li')
 
-  li.innerHTML = `<input type='checkbox' placeholder='list'>${values.item} ${values.count}개 ${values.price}원`
+  let data = JSON.parse(localStorage.getItem(`${count}`))
+
+  li.innerHTML = `<input type='checkbox' placeholder='list'>${data.item} ${data.count}개 ${data.price}원`
 
   ul.appendChild(li)
 }
