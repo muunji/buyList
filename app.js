@@ -11,3 +11,6 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
+//public 폴더
+app.use(express.static(path.join(__dirname,'public')))
+
