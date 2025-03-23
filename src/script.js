@@ -17,3 +17,9 @@ submitBtn.addEventListener('click',()=>{
 
   console.log(values)
 })
+
+function makeList(){
+  let ul = document.getElementsByTagName('ul')[0]
+
+  let li = document.createElement('li')
+}
