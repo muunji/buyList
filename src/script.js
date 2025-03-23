@@ -8,6 +8,7 @@ let list = []
 //입력값을 localStorage에 저장 후 저장된 내용을 브라우저에 출력
 submitBtn.addEventListener('click',()=>{
   list = []
+  
 
   let values = {
     group : document.querySelector('input[name="group"]:checked').value,
@@ -17,7 +18,9 @@ submitBtn.addEventListener('click',()=>{
   }
 
   console.log(values)
-  makeList(values)
+
+  localStorage.setItem(values.group, JSON.stringify(values))
+  // makeList(values)
 })
 
 function makeList(values){
