@@ -22,6 +22,8 @@ submitBtn.addEventListener('click',()=>{
   console.log(values)
 
   localStorage.setItem(`${count}`, JSON.stringify(values))
+
+  //localStorage에 저장된 내용을 리스트로 만들기
   makeList(values)
 })
 
