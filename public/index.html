@@ -10,7 +10,24 @@
     <head>
       <h1>민지네 장보기</h1>
     </head>
-    <main></main>
+    <main>
+      <section></section>
+      <section>
+        <form action="/add">
+          <div>
+            <label><input type="radio" name="group">식재료</label>
+            <label><input type="radio" name="group">생필품</label>
+            <label><input type="radio" name="group">가족 물품</label>
+          </div>
+          <div>
+            <input type="text" name="item" placeholder="이름을 입력해주세요">
+            <input type="text" name="count" placeholder="개수">
+            <input type="text" name="price" placeholder="가격 (원)">
+            <button type="submit">⇧</button>
+          </div>
+        </form>
+      </section>
+    </main>
   </div>
 </body>
 </html>
