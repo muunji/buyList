@@ -28,6 +28,7 @@ app.get('/',(req,res)=>{
 //form 데이터 입력
 app.post('/add',(req,res)=>{
   console.log(req.body)
+  // res.redirect('/')
 })
 
 app.listen(process.env.PORT, ()=>{

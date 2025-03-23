@@ -16,15 +16,22 @@ submitBtn.addEventListener('click',()=>{
   }
 
   console.log(values)
+  makeList(values)
 })
 
-function makeList(){
+function makeList(values){
   let ul = document.getElementsByTagName('ul')[0]
 
   let li = document.createElement('li')
+  let input = makeCheckInput(values);
+
+  li.innerHtml = `${values.item} ${values.count}개 ${values.price}원`
+
+  li.appendChild(input)
+  ul.appendChild(li)
 }
 
-function makeCheckInput(){
+function makeCheckInput(values){
   let input = document.createElement('input')
   input.type = 'checkbox'
   input.placeholder = 'list'
