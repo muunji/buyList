@@ -22,7 +22,7 @@ submitBtn.addEventListener('click',()=>{
   console.log(values)
 
   localStorage.setItem(`${count}`, JSON.stringify(values))
-  // makeList(values)
+  makeList(values)
 })
 
 function makeList(values){
