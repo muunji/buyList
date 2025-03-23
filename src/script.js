@@ -4,11 +4,13 @@ console.log('연결')
 let submitBtn = document.getElementsByTagName('button')[0]
 //데이터 담을 배열
 let list = []
+//key로 사용할 숫자
+let count = 0
 
 //입력값을 localStorage에 저장 후 저장된 내용을 브라우저에 출력
 submitBtn.addEventListener('click',()=>{
   list = []
-  
+  count++
 
   let values = {
     group : document.querySelector('input[name="group"]:checked').value,
@@ -19,7 +21,7 @@ submitBtn.addEventListener('click',()=>{
 
   console.log(values)
 
-  localStorage.setItem(values.group, JSON.stringify(values))
+  localStorage.setItem(`${count}`, JSON.stringify(values))
   // makeList(values)
 })
 
