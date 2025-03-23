@@ -23,3 +23,11 @@ function makeList(){
 
   let li = document.createElement('li')
 }
+
+function makeCheckInput(){
+  let input = document.createElement('input')
+  input.type = 'checkbox'
+  input.placeholder = 'list'
+
+  return input
+}
