@@ -6,5 +6,14 @@ let submitBtn = document.getElementsByTagName('button')[0]
 let list = []
 
 submitBtn.addEventListener('click',()=>{
+  list = []
 
+  let values = {
+    group : document.querySelector('input[name="group"]:checked').value,
+    item: document.getElementsByName('item')[0].value,
+    count:document.getElementsByName('count')[0].value,
+    price : document.getElementsByName('price')[0].value
+  }
+
+  console.log(values)
 })
