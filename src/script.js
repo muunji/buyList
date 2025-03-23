@@ -1,12 +1,14 @@
 console.log('연결')
 
-//제출버튼튼
+//제출버튼
 let submitBtn = document.getElementsByTagName('button')[0]
 //데이터 담을 배열
 let list = []
 //key로 사용할 숫자
 let count = 0
 
+//새로고침해도 남김
+getAllStorage()
 //입력값을 localStorage에 저장 후 저장된 내용을 브라우저에 출력
 submitBtn.addEventListener('click',()=>{
   // list = []
