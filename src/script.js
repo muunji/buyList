@@ -9,7 +9,8 @@ let count = 0
 
 //입력값을 localStorage에 저장 후 저장된 내용을 브라우저에 출력
 submitBtn.addEventListener('click',()=>{
-  list = []
+  // list = []
+  document.getElementsByTagName('ul')[0].innerHTML=''
   count++
 
   let values = {
@@ -24,13 +25,12 @@ submitBtn.addEventListener('click',()=>{
   localStorage.setItem(`${count}`, JSON.stringify(values))
 
   //localStorage에 저장된 내용을 리스트로 만들기
-  // makeList(count)
   getAllStorage()
 })
 
 function makeList(value){
   let ul = document.getElementsByTagName('ul')[0]
-
+  
   let li = document.createElement('li')
   li.innerHTML = `<input type='checkbox' placeholder='list'>${value.item} ${value.count}개 ${value.price}원`
   
@@ -40,7 +40,7 @@ function makeList(value){
 function getAllStorage(){
   for(let i = 0; i<localStorage.length; i++){
     const key = localStorage.key(i)
-    const value = localStorage.getItem(key)
+    const value = JSON.parse(localStorage.getItem(key))
     makeList(value)
   }
 }
