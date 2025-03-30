@@ -26,12 +26,14 @@ header h1 {
 }
 main > section:first-child {
   background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-main div#ask {
+main div#ask , div#me{
   display: flex;
   gap: 16px;
-  margin: 8px 0;
 }
 
 main div#ask div:first-child {
