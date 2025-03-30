@@ -31,12 +31,13 @@ main > section:first-child {
   gap: 16px;
 }
 
-main div#ask , div#me{
+main div#ask{
   display: flex;
   gap: 16px;
+  margin-top: 16px;
 }
 
-main div#ask div:first-child {
+main div#ask div:first-child, main div#me div:first-child{
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -53,4 +54,17 @@ main > section:last-child {
   position: fixed;
   width: 470px;
   bottom: 16px;
+}
+
+main div#me {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 16px;
+}
+
+main div#me div:last-child {
+  line-height: 48px;
+  padding: 0 16px;
+  background-color: #aaa;
+  border-radius: 7.5px;
 }
