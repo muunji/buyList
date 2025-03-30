@@ -9,7 +9,12 @@ function getValue(){
   let groupInput = document.querySelector('input[type="radio"]:checked')
   let input = document.querySelectorAll('form > div:last-child > input')
 
-  return 
+  return {
+    group : groupInput.value,
+    item : input[0].value,
+    count : input[1].value,
+    price : input[2].value
+  }
 }
 //input창을 만드는 함수 + li 태그 안에 넣기
 
