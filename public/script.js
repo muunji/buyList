@@ -29,4 +29,13 @@ function makeList(data){
   ul.appendChild(li)
 }
 
+//input 리셋
+function resetInput(){
+  let groupInput = document.querySelector('input[type="radio"]:checked')
+  let input = document.querySelectorAll('form > div:last-child > input')
+
+  groupInput.checked=false
+  input.forEach(i => i.value = '')
+}
+
 //함수 실행
