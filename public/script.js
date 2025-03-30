@@ -6,8 +6,10 @@ btn.addEventListener('click',(e)=>{
 
 //input 값을 가져오는 함수
 function getValue(){
-  let groupInput = document.querySelectorAll('input[type="radio"]')
+  let groupInput = document.querySelector('input[type="radio"]:checked')
   let input = document.querySelectorAll('form > div:last-child > input')
+
+  return 
 }
 //input창을 만드는 함수 + li 태그 안에 넣기
 
