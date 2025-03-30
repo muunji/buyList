@@ -17,5 +17,16 @@ function getValue(){
   }
 }
 //input창을 만드는 함수 + li 태그 안에 넣기
+function makeList(data){
+  let ul = document.getElementsByTagName('ul')[0]
+
+  let li = document.createElement('li')
+
+  let string = `<input type='checkbox'>${data.item} ${data.count} ${data.price}`
+
+  li.innerHTML = string
+
+  ul.appendChild(li)
+}
 
 //함수 실행
