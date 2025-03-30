@@ -2,6 +2,12 @@
 let btn = document.getElementsByTagName('button')[0]
 btn.addEventListener('click',(e)=>{
   e.preventDefault()
+
+  let data = getValue()
+
+  makeList(data)
+
+  resetInput()
 })
 
 //input 값을 가져오는 함수
