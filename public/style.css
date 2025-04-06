@@ -40,7 +40,7 @@ main > section:last-child {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: #ccc;
+  /* background-color: #ccc; */
 }
 /* 말풍선 */
 .bubble{
