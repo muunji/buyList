@@ -5,6 +5,12 @@ console.log('연결')
 //체크박스 형태 + 총 가격이 나오는 함수 - ul/li
 
 //1. 텍스트만 있는 함수
+function text(text){
+  let div = document.createElement('div')
+  let p = document.createElement('p')
+  p.textContent = text
+  div.appendChild(p)
+}
 //2. 아이콘만 있는 함수
 //3. 텍스트 + 아이콘 있는 함수
 //4. 체크박스 형태 함수
