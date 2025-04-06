@@ -35,3 +35,23 @@ main > section:last-child {
 }
 
 /* 함수에 클래스로 스타일 적용시키기 */
+/* 아이콘 */
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+/* 말풍선 */
+.bubble{
+  display: block;
+}
+/* 채팅 위치 */
+.chat {
+  display: flex;
+  flex-direction: row;
+}
+.say {
+  display: flex;
+  flex-direction: row-reverse;
+}
