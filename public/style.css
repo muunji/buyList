@@ -33,3 +33,5 @@ main > section:last-child {
   width: 470px;
   bottom: 16px;
 }
+
+/* 함수에 클래스로 스타일 적용시키기 */
