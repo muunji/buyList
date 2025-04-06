@@ -12,6 +12,17 @@ function text(text){
   return p
 }
 //2. 아이콘만 있는 함수
+function icon(who){
+  let div = document.createElement('div')
+  div.classList.add('icon')
+
+  if(who === 'chat'){
+    div.style.backgroundColor = '#ccc'
+  }
+  if(who === 'say'){
+    div.style.backgroundColor = '#aaa'
+  }
+}
 //3. 텍스트 + 아이콘 있는 함수
 //4. 체크박스 형태 함수
 //5. 총 가격 함수
