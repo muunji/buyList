@@ -10,6 +10,8 @@ function text(text){
   let p = document.createElement('p')
   p.textContent = text
   div.appendChild(p)
+
+  return div
 }
 //2. 아이콘만 있는 함수
 //3. 텍스트 + 아이콘 있는 함수
@@ -18,3 +20,5 @@ function text(text){
 //6. 체크박스 여러개 일 때 하나의 말풍선에 담길 수 있게하는 함수
 //7. 리스트 말풍선 + 총 가격까지 나오게하는 함수
 //8. 아이콘 + 리스트 말풍선
+
+console.log(text('test'))
