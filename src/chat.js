@@ -22,6 +22,8 @@ function icon(who){
   if(who === 'say'){
     div.style.backgroundColor = '#aaa'
   }
+
+  return div
 }
 //3. 텍스트 + 아이콘 있는 함수
 //4. 체크박스 형태 함수
