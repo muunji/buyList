@@ -17,15 +17,28 @@ function icon(who){
   div.classList.add('icon')
 
   if(who === 'chat'){
-    div.style.backgroundColor = '#ccc'
+    div.classList.add('chatIcon')
   }
   if(who === 'say'){
-    div.style.backgroundColor = '#aaa'
+    div.classList.add('sayIcon')
+  }
+  if(who === 'again'){
+    div.classList.add('againIcon')
   }
 
   return div
 }
 //3. 텍스트 + 아이콘 있는 함수
+function textWithIcon (who, text){
+  let div = document.createElement('div')
+  let icon = icon(who)
+  let text = text(text)
+
+  div.appendChild(icon)
+  div.appendChild(text)
+
+  return div
+}
 //4. 체크박스 형태 함수
 //5. 총 가격 함수
 //6. 체크박스 여러개 일 때 하나의 말풍선에 담길 수 있게하는 함수
