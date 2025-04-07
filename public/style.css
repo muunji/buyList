@@ -48,6 +48,9 @@ main > section:last-child {
 .sayIcon {
   background-color: #aaa;
 }
+.againIcon {
+  background-color: none;
+}
 /* 말풍선 */
 .bubble{
   display: block;
