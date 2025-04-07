@@ -42,6 +42,12 @@ main > section:last-child {
   border-radius: 50%;
   /* background-color: #ccc; */
 }
+.chatIcon {
+  background-color: #ccc;
+}
+.sayIcon {
+  background-color: #aaa;
+}
 /* 말풍선 */
 .bubble{
   display: block;
