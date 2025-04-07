@@ -6,10 +6,12 @@ console.log('연결')
 
 //1. 텍스트만 있는 함수
 function text(text){
+  let div = document.createElement('div')
   let p = document.createElement('p')
   p.textContent = text
+  div.appendChild(p)
 
-  return p
+  return div
 }
 //2. 아이콘만 있는 함수
 function icon(who){
