@@ -71,6 +71,12 @@ function checkListInUL(checkLists){
   return ul
 }
 //5. 총 가격 함수
+function priceAll(priceAll){
+  let div = document.createElement('div')
+  div.textContent = `총 ${priceAll}원`
+
+  return div
+}
 //6. 체크박스 여러개 일 때 하나의 말풍선에 담길 수 있게하는 함수
 //7. 리스트 말풍선 + 총 가격까지 나오게하는 함수
 //8. 아이콘 + 리스트 말풍선
