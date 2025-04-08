@@ -50,6 +50,20 @@ function textWithIcon (who, text){
   return div
 }
 //4. 체크박스 형태 함수
+function checkList(text){
+  let label = document.createElement('label')
+  let input = document.createElement('input')
+  input.type= 'checkbox'
+  input.textContent = text
+
+  label.appendChild(input)
+
+  let li = document.createElement('li')
+
+  li.append(label)
+
+  return li
+}
 //5. 총 가격 함수
 //6. 체크박스 여러개 일 때 하나의 말풍선에 담길 수 있게하는 함수
 //7. 리스트 말풍선 + 총 가격까지 나오게하는 함수
