@@ -67,10 +67,23 @@ function checkList(text){
 function checkListInUL(checkLists){
   let ul = document.createElement('ul')
   ul.appendChild(checkLists)
+
+  return ul
 }
 //5. 총 가격 함수
 //6. 체크박스 여러개 일 때 하나의 말풍선에 담길 수 있게하는 함수
 //7. 리스트 말풍선 + 총 가격까지 나오게하는 함수
 //8. 아이콘 + 리스트 말풍선
+function checkListWithIcon(checkLists){
+  let div = document.createElement('div')
+
+  let icon = icon('say')
+  let ul = checkListInUL(checkLists)
+
+  div.appendChild(icon)
+  div.appendChild(ul)
+
+  return div
+}
 
 console.log(text('test'))
