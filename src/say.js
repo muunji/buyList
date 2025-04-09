@@ -63,5 +63,16 @@ function makeRadioInputWithBtn(){
 }
 
 //3. 리스트 작성 함수
+function makeList(){
+  let section = document.createElement('section')
+
+  let radioInput = makeRadioInputWithBtn()
+  let textInput = makeInputWithBtn('제출')
+
+  section.appendChild(radioInput)
+  section.appendChild(textInput)
+
+  return section
+}
 
 //4. 리스트 수정, 삭제 함수
