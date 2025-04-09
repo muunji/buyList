@@ -46,6 +46,22 @@ function makeInputWithBtn(btnText){
   return div
 }
 
+function makeRadioInputWithBtn(){
+  let div = document.createElement('div')
+
+  let grocery = makeInputRadio('grocery')
+  let family = makeInputRadio('family')
+
+  div.appendChild(grocery)
+  div.appendChild(family)
+
+  let btn = makeBtn('추가')
+
+  div.appendChild(btn)
+
+  return div
+}
+
 //3. 리스트 작성 함수
 
 //4. 리스트 수정, 삭제 함수
