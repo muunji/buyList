@@ -76,3 +76,14 @@ function makeList(){
 }
 
 //4. 리스트 수정, 삭제 함수
+function chooseBtn(){
+  let div = document.createElement('div')
+
+  let edit = makeBtn('수정')
+  let deleteBtn = makeBtn('삭제')
+
+  div.appendChild(edit)
+  div.appendChild(deleteBtn)
+
+  return div
+}
