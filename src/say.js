@@ -19,6 +19,24 @@ function makeBtn(text){
   return btn
 }
 
+function makeInputWithBtn(btnText){
+  let div = document.createElement('div')
+
+  let itemInput = makeInput('item')
+  let numberInput = makeInput('number')
+  let priceInput = makeInput('price')
+
+  div.appendChild(itemInput)
+  div.appendChild(numberInput)
+  div.appendChild(priceInput)
+
+  let btn = makeBtn(btnText)
+
+  div.appendChild(btn)
+
+  return div
+}
+
 //3. 리스트 작성 함수
 
 //4. 리스트 수정, 삭제 함수
