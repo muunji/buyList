@@ -87,3 +87,15 @@ function chooseBtn(){
 
   return div
 }
+
+function listEdit(){
+  let section = document.createElement('section')
+
+  let btns = chooseBtn()
+  let editInput = makeInputWithBtn('수정')
+
+  section.appendChild(btns)
+  section.appendChild(editInput)
+
+  return section
+}
