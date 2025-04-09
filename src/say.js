@@ -12,6 +12,13 @@ function makeInput(inputName){
   return input
 }
 
+function makeBtn(text){
+  let btn = document.createElement('button')
+  btn.textContent = text
+  
+  return btn
+}
+
 //3. 리스트 작성 함수
 
 //4. 리스트 수정, 삭제 함수
