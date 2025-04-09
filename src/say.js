@@ -12,6 +12,15 @@ function makeInput(inputName){
   return input
 }
 
+function makeInputRadio(inputValue){
+  let input = document.createElement('input')
+  input.type = 'radio'
+  input.name = 'category'
+  input.value = inputValue
+
+  return input
+}
+
 function makeBtn(text){
   let btn = document.createElement('button')
   btn.textContent = text
