@@ -12,14 +12,29 @@ function selectOptionBtn(){
   return div
 }
 
-//2. 구매처 구매 날짜 선택 함수
 //input[type='date']생성 함수
-function makeInputDate(inputName){
+function makeInputDate(){
+
   let input = document.createElement('input')
   input.type = 'date'
-  input.name = inputName
-
+  input.name = 'date'
+  
   return input
+}
+
+//2. 구매처 구매 날짜 선택 함수
+function dateAndSpace(){
+  let div = document.createElement('div')
+
+  let space = makeInput('where')
+  let date = makeInputDate()
+  let finish = makeBtn('완료')
+
+  div.appendChild(space)
+  div.appendChild(date)
+  div.appendChild(finish)
+
+  return div
 }
 
 
