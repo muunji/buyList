@@ -13,6 +13,14 @@ function selectOptionBtn(){
 }
 
 //2. 구매처 구매 날짜 선택 함수
+//input[type='date']생성 함수
+function makeInputDate(inputName){
+  let input = document.createElement('input')
+  input.type = 'date'
+  input.name = inputName
+
+  return input
+}
 
 
 //3.4 에 동일한 구성 필요
