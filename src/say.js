@@ -4,6 +4,7 @@
 
 
 //3.4 에 동일한 구성 필요
+//input[type='text'] 생성 함수
 function makeInput(inputName){
   let input = document.createElement('input')
   input.type = 'text'
@@ -12,6 +13,7 @@ function makeInput(inputName){
   return input
 }
 
+//input[type='radio'] 생성 함수
 function makeInputRadio(inputValue){
   let input = document.createElement('input')
   input.type = 'radio'
@@ -21,6 +23,7 @@ function makeInputRadio(inputValue){
   return input
 }
 
+//button 생성 함수
 function makeBtn(text){
   let btn = document.createElement('button')
   btn.textContent = text
@@ -28,6 +31,7 @@ function makeBtn(text){
   return btn
 }
 
+//input[type='text']과 btn 생성 함수
 function makeInputWithBtn(btnText){
   let div = document.createElement('div')
 
@@ -46,6 +50,7 @@ function makeInputWithBtn(btnText){
   return div
 }
 
+//input[type='radio']과 btn 생성 함수
 function makeRadioInputWithBtn(){
   let div = document.createElement('div')
 
@@ -76,6 +81,7 @@ function makeList(){
 }
 
 //4. 리스트 수정, 삭제 함수
+//수정 삭제 버튼
 function chooseBtn(){
   let div = document.createElement('div')
 
@@ -88,6 +94,7 @@ function chooseBtn(){
   return div
 }
 
+//수정하는 input 생성 함수
 function listEdit(){
   let section = document.createElement('section')
 
