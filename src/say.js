@@ -1,4 +1,16 @@
 //1. 버튼 선택 함수
+function selectOptionBtn(){
+  let write = makeBtn('장보기 리스트 작성')
+  let start = makeBtn('장보기 시작')
+  let checkMonth = makeBtn('이번달 내역 확인')
+
+  let div = document.createElement('div')
+  div.appendChild(write)
+  div.appendChild(start)
+  div.appendChild(checkMonth)
+
+  return div
+}
 
 //2. 구매처 구매 날짜 선택 함수
 
