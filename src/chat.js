@@ -39,13 +39,13 @@ function icon(who){
   return div
 }
 //3. 텍스트 + 아이콘 있는 함수
-function textWithIcon (who, text){
+function textWithIcon (who, textContent){
   let div = document.createElement('div')
-  let icon = icon(who)
-  let text = text(text)
+  let iconDiv = icon(who)
+  let textDiv = text(textContent)
 
-  div.appendChild(icon)
-  div.appendChild(text)
+  div.appendChild(iconDiv)
+  div.appendChild(textDiv)
 
   return div
 }
@@ -100,4 +100,4 @@ function checkListWithIcon(checkLists){
   return div
 }
 
-console.log(text('test'))
+// console.log(text('test'))
