@@ -91,10 +91,10 @@ function checkListsWithPriceAll(checkLists, priceAll){
 function checkListWithIcon(checkLists){
   let div = document.createElement('div')
 
-  let icon = icon('say')
+  let iconDiv = icon('say')
   let ul = checkListInUL(checkLists)
 
-  div.appendChild(icon)
+  div.appendChild(iconDiv)
   div.appendChild(ul)
 
   return div
