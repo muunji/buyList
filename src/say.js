@@ -44,6 +44,7 @@ function makeInput(inputName){
   let input = document.createElement('input')
   input.type = 'text'
   input.name = inputName
+  input.placeholder = inputName
 
   return input
 }
@@ -55,7 +56,15 @@ function makeInputRadio(inputValue){
   input.name = 'category'
   input.value = inputValue
 
-  return input
+  let label = document.createElement('label')
+
+  let span = document.createElement('span')
+  span.textContent = inputValue
+
+  label.appendChild(input)
+  label.appendChild(span)
+
+  return label
 }
 
 //button 생성 함수
