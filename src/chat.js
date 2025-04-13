@@ -53,10 +53,13 @@ function textWithIcon (who, textContent){
 function checkList(text){
   let label = document.createElement('label')
   let input = document.createElement('input')
+
+  let spanText = document.createElement('span')
   input.type= 'checkbox'
-  input.textContent = text
+  spanText.textContent = text
 
   label.appendChild(input)
+  label.appendChild(spanText)
 
   let li = document.createElement('li')
 
