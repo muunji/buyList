@@ -64,3 +64,17 @@ main > section:last-child {
   display: flex;
   flex-direction: row-reverse;
 }
+
+/* 캐릭터의 색상 지정 */
+.one {
+  background-color: chocolate;
+}
+.two {
+  background-color: darkcyan;
+}
+.three {
+  background-color: darkgreen;
+}
+.four {
+  background-color: dodgerblue;
+}
