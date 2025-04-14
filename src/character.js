@@ -21,8 +21,8 @@ function makeColorDiv(number){
 //색깔이 있는 div를 가진 요소 생성 함수
 function sectionColorDiv(colorArr){
   let section = document.createElement('section')
-  colorArr.forEach(color=>{
-    section.appendChild(makeColorDiv(color))
+  colorArr.forEach((color,index)=>{
+    section.appendChild(makeColorDiv(index))
   })
   return section
 }
