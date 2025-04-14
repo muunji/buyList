@@ -4,7 +4,7 @@
 // three: darkgreen;
 // four: dodgerblue;
 
-colorArr = ['one','two','three','four']
+let colorArr = ['one','two','three','four']
 
 //색깔이 있는 div
 function makeColorDiv(number){
@@ -19,11 +19,17 @@ function makeColorDiv(number){
 }
 
 //색깔이 있는 div를 가진 요소 생성 함수
-function sectionColorDiv(){
-
+function sectionColorDiv(colorArr){
+  let divs = null
+  colorArr.forEach(color=>{
+    divs+=makeColorDiv(color)
+  })
+  return divs
 }
 
 //div 선택했을 때 반환값을 가지는 함수
 function selectColorDiv(){
 
 }
+
+console.log(sectionColorDiv(colorArr))
