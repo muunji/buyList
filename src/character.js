@@ -20,9 +20,9 @@ function makeColorDiv(number){
 
 //색깔이 있는 div를 가진 요소 생성 함수
 function sectionColorDiv(colorArr){
-  let divs = null
+  let divs=[]
   colorArr.forEach(color=>{
-    divs+=makeColorDiv(color)
+    divs.push(makeColorDiv(color))
   })
   return divs
 }
