@@ -13,18 +13,18 @@ function makeColorDiv(number){
   colorDiv.style.height='200px'
   colorDiv.style.borderRadius = '50%'
 
-  colorDiv.classList.add = colorArr[number]
+  colorDiv.classList.add(colorArr[number])
 
   return colorDiv
 }
 
 //색깔이 있는 div를 가진 요소 생성 함수
 function sectionColorDiv(colorArr){
-  let divs=[]
+  let section = document.createElement('section')
   colorArr.forEach(color=>{
-    divs.push(makeColorDiv(color))
+    section.appendChild(makeColorDiv(color))
   })
-  return divs
+  return section
 }
 
 //div 선택했을 때 반환값을 가지는 함수
