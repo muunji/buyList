@@ -28,8 +28,9 @@ function sectionColorDiv(colorArr){
 }
 
 //div 선택했을 때 반환값을 가지는 함수
-function selectColorDiv(){
+function selectColorDiv(e){
 
+  let className = e.target.className
+
+  return className
 }
-
-console.log(sectionColorDiv(colorArr))
