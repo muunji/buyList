@@ -14,6 +14,8 @@ function makeColorDiv(number){
   colorDiv.style.borderRadius = '50%'
 
   colorDiv.classList.add = colorArr[number]
+
+  return colorDiv
 }
 
 //색깔이 있는 div를 가진 요소 생성 함수
