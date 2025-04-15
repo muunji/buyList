@@ -22,7 +22,7 @@ function makeColorDiv(number,colorArr){
 function sectionColorDiv(colorArr){
   let section = document.createElement('section')
   colorArr.forEach((color,index)=>{
-    section.appendChild(makeColorDiv(index))
+    section.appendChild(makeColorDiv(index,colorArr))
   })
   return section
 }
