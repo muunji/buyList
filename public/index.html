@@ -45,10 +45,12 @@
       </section>
     </main>
   </div>
+  <div id="icon"></div>
   <script src="/chat.js"></script>
   <script src="/say.js"></script>
   <script src="/character.js"></script>
   <script>
+    //root
     let section = document.querySelectorAll('section')
 
     //ask
@@ -64,6 +66,12 @@
     //입력창
     let form = makeList()
     section[1].appendChild(form)
+
+    //icon
+    let colorArr = ['one','two','three','four']
+
+    let colorSection = sectionColorDiv(colorArr)
+    let iconDiv = document.getElementById('icon')
   </script>
 </body>
 </html>
