@@ -45,6 +45,8 @@ class List{
     //값이 있으면
     if(category){
       this._category = category
+    } else {
+      console.error('카테고리를 선택해주세요')
     }
   }
 
@@ -52,6 +54,8 @@ class List{
     //문자열이면
     if(typeof item === 'string'){
       this._item = item
+    } else {
+      console.error('문자열로 입력해주세요')
     }
   }
 
@@ -59,6 +63,8 @@ class List{
     //수량, 숫자로 적힌 내용이 있으면
     if(!isNaN(Number(number))){
       this._number=Number(number)
+    } else {
+      console.error('숫자를 작성해주세요')
     }
   }
 
@@ -66,6 +72,8 @@ class List{
     //가격, 숫자로 적힌 내용이 있으면
     if(!isNaN(Number(price))){
       this._price=Number(price)
+    }else {
+      console.error('숫자를 작성해주세요')
     }
   }
 
