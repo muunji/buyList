@@ -64,4 +64,20 @@ class List{
       this._price=Number(price)
     }
   }
+
+  get category(){
+    return this._category
+  }
+
+  get item(){
+    return this._item
+  }
+
+  get number(){
+    return this._number
+  }
+
+  get price(){
+    return this._price
+  }
 }
