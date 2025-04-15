@@ -54,14 +54,14 @@ class List{
   set number(number){
     //수량, 숫자로 적힌 내용이 있으면
     if(!isNaN(Number(number))){
-      this._number=Number
+      this._number=Number(number)
     }
   }
 
   set price(price){
     //가격, 숫자로 적힌 내용이 있으면
     if(!isNaN(Number(price))){
-      this._price=price
+      this._price=Number(price)
     }
   }
 }
