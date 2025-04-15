@@ -96,4 +96,4 @@ class List{
 
 //테스트
 const day = new Day('','문자')
-// console.log(day)
+const list = new List('ss','aa','a','1000')
