@@ -81,3 +81,7 @@ class List{
     return this._price
   }
 }
+
+//테스트
+const day = new Day('0303',)
+console.log(day)
