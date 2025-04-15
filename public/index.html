@@ -70,8 +70,14 @@
     //icon
     let colorArr = ['one','two','three','four']
 
+    //선택할 수 있는 div 생성
     let colorSection = sectionColorDiv(colorArr)
     let iconDiv = document.getElementById('icon')
+    iconDiv.appendChild(colorSection)
+
+    //클릭 이벤트 적용
+    let colorDivs = colorSection.children
+    console.log(colorDivs)
   </script>
 </body>
 </html>
