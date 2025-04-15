@@ -4,10 +4,10 @@
 // three: darkgreen;
 // four: dodgerblue;
 
-let colorArr = ['one','two','three','four']
+// let colorArr = ['one','two','three','four']
 
 //색깔이 있는 div
-function makeColorDiv(number){
+function makeColorDiv(number,colorArr){
   let colorDiv = document.createElement('div')
   colorDiv.style.width = '200px'
   colorDiv.style.height='200px'
