@@ -16,6 +16,8 @@ class Day {
     //문자열이면
     if(typeof where === 'string'){
       this._where=where;
+    } else{
+      console.error('문자열로 입력해주세요')
     }
   }
 
@@ -84,4 +86,4 @@ class List{
 
 //테스트
 const day = new Day('0303',)
-console.log(day)
+// console.log(day)
