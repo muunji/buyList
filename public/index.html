@@ -78,8 +78,8 @@
     //클릭 이벤트 적용
     let colorDivs = colorSection.children
     for(let i=0; i<colorDivs.length; i++){
-      colorDivs[i].addEventListener('click',()=>{
-        console.log(i,'클릭')
+      colorDivs[i].addEventListener('click',(e)=>{
+        console.log(selectColorDiv(e))
       })
     }
   </script>
