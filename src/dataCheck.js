@@ -9,6 +9,8 @@ class Day {
     //값이 있으면
     if(date) {
       this._date = date
+    } else {
+      console.error('값을 입력해주세요')
     }
   }
 
@@ -85,5 +87,5 @@ class List{
 }
 
 //테스트
-const day = new Day('0303',)
+const day = new Day('','문자')
 // console.log(day)
