@@ -51,9 +51,14 @@
   <script src="/character.js"></script>
   <!-- <script src="/first-script.js"></script> -->
   <script>
+    let section = document.querySelectorAll('section')
     //ask - "어서와! 장보기 목록 작성 시작해볼까"
+    let askDiv = textWithIcon('chat','어서와! 장보기 목록 작성해볼까?')
+    section[0].appendChild(askDiv)
 
     //채팅 - 버튼 선택
+    let btnDiv = selecOptionBtn()
+    section[1].appendChild(btnDiv)
 
     //버튼에 따른 실행 
   </script>
