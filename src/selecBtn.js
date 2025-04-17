@@ -14,10 +14,16 @@ function writeBtn(section){
 }
 
 //장보기 시작 
-function startBtn(){
+function startBtn(section){
   //me - 장보기 시작
+  let meDiv = textWithIcon('say','장보기 시작')
+  section.appendChild(meDiv)
 
   //2초후 - 이제 리스트 작성해보자
+  setTimeout(()=>{
+    let chat = textWithIcon('chat','이제 리스트를 작성해보자')
+    section.appendChild(chat)
+  },1000)
 }
 
 //이번달 내역 확인
