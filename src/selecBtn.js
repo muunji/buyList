@@ -6,7 +6,10 @@ function writeBtn(section){
   section.appendChild(meDiv)
 
   //2초 후 ask- 좋아! 슈퍼에서 장보기 언제할꺼야
-  setTimeout(textWithIcon('chat','좋아! 슈퍼에서 장보기 언제할꺼야?'),2000)
+  setTimeout(()=>{
+    let chat = textWithIcon('chat','좋아! 슈퍼에서 장보기 언제할꺼야?')
+    section.appendChild(chat)
+  },1000)
 
 }
 
