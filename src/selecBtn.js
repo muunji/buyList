@@ -1,8 +1,12 @@
 //장보기 리스트 작성 함수
-function writeBtn(){
+
+function writeBtn(section){
   //me - 장보기 리스트 작성
+  let meDiv = textWithIcon('say','장보기 리스트 작성')
+  section.appendChild(meDiv)
 
   //2초 후 ask- 좋아! 슈퍼에서 장보기 언제할꺼야
+  setTimeout(textWithIcon('chat','좋아! 슈퍼에서 장보기 언제할꺼야?'),2000)
 
 }
 
