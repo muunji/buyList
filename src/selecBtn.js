@@ -27,8 +27,14 @@ function startBtn(section){
 }
 
 //이번달 내역 확인
-function checkBtn(){
+function checkBtn(section){
   //me - 이번달 내역 확인
+  let meDiv = textWithIcon('say','이번달 내역 확인')
+  section.appendChild(meDiv)
 
   //2초후 - 이번 달에 구매한 내역 보여줄게
+  setTimeout(()=>{
+    let chat = textWithIcon('chat','이번 달에 구매한 내역 보여줄게')
+    section.appendChild(chat)
+  },1000)
 }
