@@ -62,8 +62,11 @@
     section[1].appendChild(btnDiv)
 
     //버튼에 따른 실행 
-    console.log(btnDiv.children)
-
+    let btns = btnDiv.children
+    //첫번째 버튼
+    btns[0].addEventListener('click',()=>{
+      console.log(1)
+    })
   </script>
 </body>
 </html>
