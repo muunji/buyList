@@ -22,12 +22,13 @@ function bubbleText(text){
   return div
 }
 //2. 아이콘만 있는 함수
-function icon(who){
+function icon(who,option){
   let div = document.createElement('div')
   div.classList.add('icon')
 
   if(who === 'chat'){
     div.classList.add('chatIcon')
+    div.classList.add(option)
   }
   if(who === 'say'){
     div.classList.add('sayIcon')
