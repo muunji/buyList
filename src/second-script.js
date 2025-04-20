@@ -1,6 +1,6 @@
 
 function firstChat(){
-  let section = document.querySelectorAll('section')
+  let section = document.querySelectorAll('#root section')
   //ask - "어서와! 장보기 목록 작성 시작해볼까"
   let askDiv = textWithIcon('chat','어서와! 장보기 목록 작성해볼까?')
   section[0].appendChild(askDiv)
