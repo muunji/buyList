@@ -51,7 +51,7 @@
   <script src="/character.js"></script>
   <script src="/selecBtn.js"></script>
   <!-- <script src="/first-script.js"></script> -->
-  <!-- <script src="/second-script.js"></script> -->
+  <script src="/second-script.js"></script>
   <script>
     // 클래스 정하는 첫번째 화면
     // splash만 화면에 보임
@@ -73,12 +73,15 @@
         chatClassName = selectColorDiv(e)
         //splash 안보이기
         document.getElementById('splash').style.display = 'none';
+        // 버튼 선택하는 화면 div#root 보여주기
         document.getElementById('root').style.display = 'block';
+        // root가 block이라면 second-script.js 실행하기
+        if(document.getElementById('root').style.display == 'block'){
+          firstChat()
+        }
       })
     })
 
-    // 버튼 선택하는 화면 div#root 보여주기
-    // root가 block이라면 second-script.js 실행하기
 
     // 버튼 선택에 따른 과정 보여줌
   </script>
