@@ -40,9 +40,9 @@ function icon(who,option){
   return div
 }
 //3. 텍스트 + 아이콘 있는 함수
-function textWithIcon (who, textContent){
+function textWithIcon (who, textContent,option){
   let div = document.createElement('div')
-  let iconDiv = icon(who)
+  let iconDiv = icon(who,option)
   let textDiv = text(textContent)
 
   div.appendChild(iconDiv)
