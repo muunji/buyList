@@ -64,6 +64,22 @@
     let colorSection = sectionColorDiv(colorArr);
     document.getElementById('splash').appendChild(colorSection);
 
+    // 선택한 요소 값 가져오기
+    let chatClassName = null
+
+    let colorDivs = document.querySelectorAll('#splash div')
+    colorDivs.forEach(div => {
+      div.addEventListener('click',(e)=>{
+        chatClassName = selectColorDiv(e)
+      })
+    })
+
+    setTimeout(()=>{
+      console.log(chatClassName)
+    }, 2000)
+
+    //splash 안보이기
+
     // 버튼 선택하는 화면 div#root 보여주기
 
     // 버튼 선택에 따른 과정 보여줌
