@@ -9,8 +9,8 @@
 //색깔이 있는 div
 function makeColorDiv(number,colorArr){
   let colorDiv = document.createElement('div')
-  colorDiv.style.width = '200px'
-  colorDiv.style.height='200px'
+  colorDiv.style.width = '100px'
+  colorDiv.style.height='100px'
   colorDiv.style.borderRadius = '50%'
 
   colorDiv.classList.add(colorArr[number])
