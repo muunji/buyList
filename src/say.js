@@ -13,6 +13,16 @@ function selectOptionBtn(){
 }
 
 //1-1. 내역확인 클릭 후 버튼2개만 나오는 함수
+function selectOptionBtnTwo(){
+  let write = makeBtn('장보기 리스트 작성')
+  let start = makeBtn('장보기 시작')
+
+  let div = document.createElement('div')
+  div.appendChild(write)
+  div.appendChild(start)
+
+  return div
+}
 
 //input[type='date']생성 함수
 function makeInputDate(){
