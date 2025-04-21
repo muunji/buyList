@@ -13,7 +13,7 @@ function firstChat(option){
   let btns = btnDiv.children
   //첫번째 버튼
   btns[0].addEventListener('click',()=>{
-    writeBtn(section[0],option)
+    writeBtn(section,option)
   })
   btns[1].addEventListener('click',()=>{
     startBtn(section[0],option)
