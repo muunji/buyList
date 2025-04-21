@@ -12,6 +12,8 @@ function selectOptionBtn(){
   return div
 }
 
+//1-1. 내역확인 클릭 후 버튼2개만 나오는 함수
+
 //input[type='date']생성 함수
 function makeInputDate(){
 
