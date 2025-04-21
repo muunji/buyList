@@ -19,7 +19,7 @@ function firstChat(option){
     startBtn(section,option)
   })
   btns[2].addEventListener('click',()=>{
-    checkBtn(section[0],option)
+    checkBtn(section,option)
   })
 
 }
