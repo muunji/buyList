@@ -19,15 +19,20 @@ function writeBtn(sections,option){
 }
 
 //장보기 시작 
-function startBtn(section,option){
+function startBtn(sections,option){
   //me - 장보기 시작
   let meDiv = textWithIcon('say','장보기 시작',option)
-  section.appendChild(meDiv)
+  sections[0].appendChild(meDiv)
 
   //2초후 - 이제 리스트 작성해보자
+  //say -  #root section[1] 3번 함수로 변경
   setTimeout(()=>{
     let chat = textWithIcon('chat','이제 리스트를 작성해보자',option)
-    section.appendChild(chat)
+    sections[0].appendChild(chat)
+
+    sections[1].innerHTML = '' //초기화
+    let listDiv = makeList()
+    sections[1].appendChild(listDiv)
   },1000)
 }
 
