@@ -54,6 +54,9 @@ function checkBtn(sections,option){
     checkDiv.children[0].addEventListener('click',()=>{
       writeBtn(sections,option)
     })
+    checkDiv.children[1].addEventListener('click',()=>{
+      startBtn(sections,option)
+    })
     sections[1].appendChild(checkDiv)
   },1000)
 }
