@@ -37,14 +37,19 @@ function startBtn(sections,option){
 }
 
 //이번달 내역 확인
-function checkBtn(section,option){
+function checkBtn(sections,option){
   //me - 이번달 내역 확인
   let meDiv = textWithIcon('say','이번달 내역 확인')
-  section.appendChild(meDiv)
+  sections[0].appendChild(meDiv)
 
   //2초후 - 이번 달에 구매한 내역 보여줄게
+  //say - #root section[0] 1-1번 함수로 변경
   setTimeout(()=>{
     let chat = textWithIcon('chat','이번 달에 구매한 내역 보여줄게',option)
-    section.appendChild(chat)
+    sections[0].appendChild(chat)
+
+    sections[1].innerHTML = '' //초기화
+    let checkDiv = selectOptionBtnTwo()
+    sections[1].appendChild(checkDiv)
   },1000)
 }
