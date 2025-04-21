@@ -50,6 +50,10 @@ function checkBtn(sections,option){
 
     sections[1].innerHTML = '' //초기화
     let checkDiv = selectOptionBtnTwo()
+    // 여기서 직접 적용
+    checkDiv.children[0].addEventListener('click',()=>{
+      writeBtn(sections,option)
+    })
     sections[1].appendChild(checkDiv)
   },1000)
 }
